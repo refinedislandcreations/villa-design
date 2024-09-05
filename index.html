@@ -15,3 +15,215 @@ header:
    text: 
 ---
 
+<!------------ Header Section ------------>
+<header class="relative max-w-screen-2xl mx-auto">
+  <!-- Fixed Navigation -->
+  <div class="fixed top-0 left-0 right-0 flex justify-between items-center px-5p py-2p nav-bg z-20">
+    <h2 class="text-2xl">
+      <a href="/index"> Villa Cantik </a>
+    </h2>
+    <nav class="tracking-wide">
+      <a href="/rooms"> Rooms </a>
+      <a href="/contact" class="ml-4 font-bold"> Book Now </a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="relative flex flex-col sm:grid sm:grid-cols-2">
+    <!-- Text Column -->
+    <div class="flex items-center justify-center p-5">
+      <div class="text-center">
+        <p class="small-font">Serenity in the Jungle</p>
+        <h2 class="text-4xl title-font">Villa Cantik</h2>
+        <p class="py-10p">
+          Revel in exquisite design and unparalleled comfort, just moments from Bali’s pristine coastline. Your exclusive sanctuary awaits amidst nature's finest.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div class="relative min-h-screen">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/banner-optimized.png"  style="object-position: center;" alt="Villa Cantik"
+      />
+    </div>
+  </div>
+</header>
+
+
+<!--------Banner-------------->
+<section class="max-w-screen-2xl mx-auto">
+  <div class="dark-bg text-center title-font py-2p mt-5p">
+    <p>And sometimes, all it takes is a few days in the jungle.</p>
+  </div>
+</section>
+
+
+
+<!-----------Text and images-------------->
+<section class="max-w-screen-2xl mx-auto">
+  <div class="grid grid-cols-3 p-5p gap-3">
+    <div class="col-span-1 flex flex-col justify-center items-start">
+      <p class="small-font">Experience Villa Cantik</p>
+      <p class="text-2xl title-font">Explore Our Jungle Retreat</p>
+    </div>
+    <div class="col-span-2 flex items-center">
+      <p>Get a glimpse of Villa Cantik through striking visuals that capture the essence of our secluded jungle haven. See how luxury and nature blend seamlessly in every corner of your escape.</p>
+    </div>
+    <div class="relative h-full min-h-30">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-1.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    <div class="relative h-full min-h-30">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-2.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    <div class="relative h-full min-h-30">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-3.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    <div class="relative h-full min-h-30">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-4.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    <div class="relative h-full min-h-30">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-5.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+    <div class="relative h-full min-h-30">
+      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-6.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-----BG and Text-------->
+
+<section class="max-w-screen-2xl mx-auto">
+  <div class="relative">
+    <div class="bg-cover bg-no-repeat"
+        style="background-image: url('/images/banner-quote.png'); height: 24rem; background-position: {{ page.quote-position }};">
+      <div class="absolute inset-0 flex items-center justify-center p-5p">
+        <div class="p-8 text-center">
+          <p class="banner-font text-light text-xl sm:text-3xl lg:text-4xl">
+            Immerse yourself in the jungle, and discover the luxury of pure serenity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!------Amenities-------------->
+
+<section class="max-w-screen-2xl mx-auto">
+  <div class="p-5">
+    <p class="title-font text-2xl sm:text-4xl pb-5">Explore the Beauty of Our Villa in Detail</p>
+    <div class="sm:grid sm:grid-cols-2 gap-5 mb-5">
+      <!-- Image 1 -->
+      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+        <div class="absolute inset-0">
+          <img 
+            loading="lazy"
+            class="w-full h-full object-cover"
+            src="/images/details-2.png"
+            style="object-position: {{ page.reconciliation-position }};"
+            alt="{{ page.reconciliation-alt }}" 
+          />
+        </div>
+      </div>
+      <!-- Text Content -->
+      <div class="col-span-1 flex flex-col justify-center">
+        <p class="small-font">Grand Living Room</p>
+        <p class="text-2xl title-font">Where Elegance Meets Comfort</p>
+        <p>Step into the grand living room of Villa Cantik, where sophisticated design and ultimate comfort come together. With expansive space, plush furnishings, and stunning views of the lush jungle, this is the perfect setting for relaxation and entertaining. Experience the art of living well in every corner of this beautifully appointed room.</p>
+      </div>
+
+
+      <!-- Image 2 -->
+      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+        <div class="absolute inset-0">
+          <img 
+            loading="lazy"
+            class="w-full h-full object-cover"
+            src="/images/details-5.png"
+            style="object-position: {{ page.reconciliation-position }};"
+            alt="{{ page.reconciliation-alt }}" 
+          />
+        </div>
+      </div>
+      <!-- Text Content -->
+      <div class="col-span-1 flex flex-col justify-center">
+        <p class="small-font">Jungle-Encased Windows</p>
+        <p class="text-2xl title-font">Rooms Bathed in Natural Light</p>
+        <p>Each room at Villa Cantik features expansive windows that frame the lush jungle beyond, bringing the outdoors in. The large, unobstructed views not only flood the spaces with natural light but also create a seamless connection to the serene jungle surroundings. Enjoy a tranquil retreat where every glance offers a glimpse of nature’s beauty.</p>
+      </div>
+
+
+
+      <!-- Image 3 -->
+      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+        <div class="absolute inset-0">
+          <img 
+            loading="lazy"
+            class="w-full h-full object-cover"
+            src="/images/details-1.png"
+            style="object-position: {{ page.reconciliation-position }};"
+            alt="{{ page.reconciliation-alt }}" 
+          />
+        </div>
+      </div>
+      <!-- Text Content -->
+      <div class="col-span-1 flex flex-col justify-center">
+        <p class="small-font">Botanical Bath Bliss</p>
+        <p class="text-2xl title-font">Indulge in Nature's Spa</p>
+        <p>Experience the luxury of a beautifully appointed bathroom at Villa Cantik, where a stunning bathtub is nestled amid lush plants. This serene oasis reflects our commitment to the healing power of nature, blending the beauty of the jungle with the elegance of indoor spaces. Immerse yourself in relaxation as you soak surrounded by vibrant greenery, bringing the soothing essence of the jungle right into your personal retreat.</p>
+      </div>
+
+
+      <!-- Image 4 -->
+<div class="relative col-span-1 h-[80vh] min-h-[400px]">
+  <div class="absolute inset-0">
+    <img 
+      loading="lazy"
+      class="w-full h-full object-cover"
+      src="/images/details-4.png"
+      style="object-position: {{ page.reconciliation-position }};"
+      alt="{{ page.reconciliation-alt }}" 
+    />
+  </div>
+</div>
+
+<!-- Text Content -->
+<div class="col-span-1 flex flex-col justify-center">
+  <div class="grid grid-cols-1 gap-4">
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-person text-xl"></i>
+      <p class="text-lg">Accommodates: Up to 8 guests</p>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-bed text-xl"></i>
+      <p class="text-lg">Bedrooms: 4 spacious bedrooms</p>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-bath text-xl"></i>
+      <p class="text-lg">Bathrooms: 6 elegantly designed bathrooms</p>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-utensils text-xl"></i>
+      <p class="text-lg">Kitchen: Fully equipped modern kitchen</p>
+    </div>
+    <div class="flex items-center space-x-2">
+      <i class="fa-solid fa-person-swimming text-xl"></i>
+      <p class="text-lg">Pool: Private swimming pool with jungle views</p>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
