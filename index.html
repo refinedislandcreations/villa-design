@@ -15,43 +15,51 @@ header:
    text: 
 ---
 
-<!------------ Header Section ------------>
 <header class="relative max-w-screen-2xl mx-auto">
-  <!-- Fixed Navigation -->
-  <div class="fixed top-0 left-0 right-0 flex justify-between items-center px-5p py-2p nav-bg z-20">
-    <h2 class="text-2xl">
-      <a href="/index"> Villa Cantik </a>
+  <!-- Fixed Navigation Positioned Over Image on Smaller Screens -->
+  <div class="absolute top-0 left-0 right-0 flex flex-col items-center px-5p py-2p z-20 text-white sm:fixed sm:flex-row sm:justify-between sm:items-center sm:text-black nav-bg">
+    <h2 class="text-2xl mb-2 sm:mb-0">
+      <a href="/index">Villa Cantik</a>
     </h2>
-    <nav class="tracking-wide">
-      <a href="/rooms"> Rooms </a>
-      <a href="/contact" class="ml-4 font-bold"> Book Now </a>
+    <nav class="tracking-wide flex space-x-4 sm:space-x-0">
+      <a href="/rooms" class="sm:ml-4">Rooms</a>
+      <a href="/contact" class="font-bold sm:ml-4">Book Now</a>
     </nav>
   </div>
 
   <!-- Main Content -->
-  <div class="relative flex flex-col sm:grid sm:grid-cols-2">
-    <!-- Text Column -->
-    <div class="flex items-center justify-center p-5">
-      <div class="text-center">
+  <div class="relative flex flex-col items-center justify-center min-h-screen text-center text-white sm:grid sm:grid-cols-2 sm:bg-opacity-0 sm:text-black">
+    <!-- Text Column Default on Smaller Screens -->
+    <div class="relative z-20 p-5 max-w-lg text-center sm:block sm:items-start sm:justify-center sm:p-5 sm:bg-transparent sm:col-span-1">
+      <!-- Background Box for Smaller Screens -->
+      <div class="nav-bg rounded-lg p-5 sm:bg-transparent">
         <p class="small-font">Serenity in the Jungle</p>
         <h2 class="text-4xl title-font">Villa Cantik</h2>
-        <p class="px-10p pb-5p">
+        <p class="px-5p pb-5p sm:px-10p sm:pb-5p">
           Revel in exquisite design and unparalleled comfort, just moments from Bali’s pristine coastline. Your exclusive sanctuary awaits amidst nature's finest.
         </p>
         <div data-aos="fade-down">
           <p class="button">Book now</p>
         </div>
-        
       </div>
     </div>
 
-    <!-- Image Column -->
-    <div class="relative min-h-screen">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/banner-optimized.png"  style="object-position: center;" alt="Villa Cantik"
+    <!-- Image Column with Overlay on Smaller Screens -->
+    <div class="absolute inset-0 w-full h-full object-cover sm:relative sm:min-h-screen sm:block">
+      <img 
+        src="/images/banner-optimized.png" 
+        loading="lazy" 
+        class="absolute inset-0 w-full h-full object-cover sm:static sm:object-cover" 
+        alt="Villa Cantik" 
+        style="object-position: center;"
       />
     </div>
   </div>
 </header>
+
+
+
+
 
 <!-- Banner Section -->
 <section class="max-w-screen-2xl mx-auto">
@@ -303,5 +311,40 @@ header:
   </div>
 </section>
 
+
+
+<footer class="max-w-screen-2xl mx-auto">
+  <!-- Horizontal line above the footer -->
+  <hr class="border-t border-gray-300 my-5">
+  
+  <div class="grid grid-cols-3 px-5p pt-5p gap-5">
+    <div class="col-span-1 flex flex-col justify-center items-start pr-5p">
+      <h2 class="text-2xl">
+        <a href="/index">Villa Cantik</a>
+      </h2>
+    </div>
+    <div class="col-span-2 flex justify-center items-center space-x-4">
+      <!-- WhatsApp (Link formatted for mobile devices) -->
+      <a href="https://wa.me/{{ item.whatsapp-nr | replace: ' ', '' }}" class="text-xl" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <!-- Email -->
+      <a href="mailto:{{ item.email }}" class="text-xl" aria-label="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+      <!-- Instagram (Link to Instagram profile) -->
+      <a href="https://instagram.com/{{ item.instagram | replace: '@', '' }}" class="text-xl" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+  
+  <div class="text-center py-5p">
+    <p>&copy; {{ "now" | date: "%Y" }} All rights reserved.</p>
+    <a href="https://refinedislandcreations.com/" class="pt-2" target="_blank" rel="noopener noreferrer" aria-label="Link to Refined Island Creations website design and development">
+      Designed and built by <span class="underline font-semibold">Refined Island Creations</span>.
+    </a>
+  </div>
+</footer>
 
 

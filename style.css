@@ -188,3 +188,11 @@ header {
 iframe {
   height: 100%; /* Allow the iframe to fully utilize the height of the container */
 }
+
+
+.fa-brands, .fa-regular {
+  transition: transform 0.3s ease;
+}
+.fa-brands:hover, .fa-regular:hover {
+  transform: scale(1.1);
+}
