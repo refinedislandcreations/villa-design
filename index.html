@@ -35,9 +35,13 @@ header:
       <div class="text-center">
         <p class="small-font">Serenity in the Jungle</p>
         <h2 class="text-4xl title-font">Villa Cantik</h2>
-        <p class="py-10p">
+        <p class="px-10p pb-5p">
           Revel in exquisite design and unparalleled comfort, just moments from Bali’s pristine coastline. Your exclusive sanctuary awaits amidst nature's finest.
         </p>
+        <div data-aos="fade-down">
+          <p class="button">Book now</p>
+        </div>
+        
       </div>
     </div>
 
@@ -49,46 +53,48 @@ header:
   </div>
 </header>
 
-
-<!--------Banner-------------->
+<!-- Banner Section -->
 <section class="max-w-screen-2xl mx-auto">
-  <div class="dark-bg text-center title-font py-2p mt-5p">
-    <p>And sometimes, all it takes is a few days in the jungle.</p>
+  <div class="dark-bg text-light banner-font py-2p mt-5p flex items-center justify-center h-40">
+    <div class="scroll-container">
+      <div class="horizontal-scrolling-items">
+        <div class="horizontal-scrolling-items__item">
+          <p>And sometimes, all it takes is a few days in the jungle. A few days away from the relentless noise of the city, where the chaos of everyday life feels miles away. A place where the rhythm of nature replaces the constant hum of urban life. Some time for the breeze to clear your thoughts, untangling the worries that weigh you down. For the lush green leaves to soothe your soul, reminding you of the simple, unhurried pace of life. It’s in these quiet moments, surrounded by the beauty of nature, that you find clarity, peace, and a renewed sense of self.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 
 
+
 <!-----------Text and images-------------->
 <section class="max-w-screen-2xl mx-auto">
-  <div class="grid grid-cols-3 p-5p gap-3">
-    <div class="col-span-1 flex flex-col justify-center items-start">
+  <div class="grid grid-cols-3 p-5p gap-5">
+    <div class="col-span-1 flex flex-col justify-center items-start pr-5p">
       <p class="small-font">Experience Villa Cantik</p>
       <p class="text-2xl title-font">Explore Our Jungle Retreat</p>
     </div>
     <div class="col-span-2 flex items-center">
       <p>Get a glimpse of Villa Cantik through striking visuals that capture the essence of our secluded jungle haven. See how luxury and nature blend seamlessly in every corner of your escape.</p>
     </div>
-    <div class="relative h-full min-h-30">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-1.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    <div class="relative h-full min-h-30">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-2.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    <div class="relative h-full min-h-30">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-3.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    <div class="relative h-full min-h-30">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-4.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    <div class="relative h-full min-h-30">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-5.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
-    </div>
-    <div class="relative h-full min-h-30">
-      <img loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="/images/gallery-6.png" style="object-position: {{ item.position }};" alt="{{ item.alt }}" />
+    <!-- Updated gallery section -->
+    <div class="col-span-3 flex flex-wrap justify-center gap-3">
+      <div class="gallery-pic" style="background-image:url('/images/gallery-1.png');" alt="View from the garden"></div>
+      <div class="gallery-pic" style="background-image:url('/images/gallery-2.png');" alt="Cozy living area with jungle view"></div>
+      <div class="gallery-pic" style="background-image:url('/images/gallery-3.png');" alt="Spacious bedroom with natural light"></div>
+      <div class="gallery-pic" style="background-image:url('/images/gallery-4.png');" alt="Elegant bathroom with modern fixtures"></div>
+      <div class="gallery-pic" style="background-image:url('/images/gallery-5.png');" alt="Relaxing outdoor seating area"></div>
+      <div class="gallery-pic" style="background-image:url('/images/gallery-6.png');" alt="Scenic pool view surrounded by greenery"></div>
     </div>
   </div>
 </section>
+
+
+
+
+
 
 
 
@@ -117,7 +123,7 @@ header:
 <!------Amenities-------------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="p-5">
+  <div class="p-5p">
     <p class="title-font text-2xl sm:text-4xl pb-5">Explore the Beauty of Our Villa in Detail</p>
     <div class="sm:grid sm:grid-cols-2 gap-5 mb-5">
       <!-- Image 1 -->
@@ -133,7 +139,7 @@ header:
         </div>
       </div>
       <!-- Text Content -->
-      <div class="col-span-1 flex flex-col justify-center">
+      <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
         <p class="small-font">Grand Living Room</p>
         <p class="text-2xl title-font">Where Elegance Meets Comfort</p>
         <p>Step into the grand living room of Villa Cantik, where sophisticated design and ultimate comfort come together. With expansive space, plush furnishings, and stunning views of the lush jungle, this is the perfect setting for relaxation and entertaining. Experience the art of living well in every corner of this beautifully appointed room.</p>
@@ -153,7 +159,7 @@ header:
         </div>
       </div>
       <!-- Text Content -->
-      <div class="col-span-1 flex flex-col justify-center">
+      <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
         <p class="small-font">Jungle-Encased Windows</p>
         <p class="text-2xl title-font">Rooms Bathed in Natural Light</p>
         <p>Each room at Villa Cantik features expansive windows that frame the lush jungle beyond, bringing the outdoors in. The large, unobstructed views not only flood the spaces with natural light but also create a seamless connection to the serene jungle surroundings. Enjoy a tranquil retreat where every glance offers a glimpse of nature’s beauty.</p>
@@ -174,7 +180,7 @@ header:
         </div>
       </div>
       <!-- Text Content -->
-      <div class="col-span-1 flex flex-col justify-center">
+      <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
         <p class="small-font">Botanical Bath Bliss</p>
         <p class="text-2xl title-font">Indulge in Nature's Spa</p>
         <p>Experience the luxury of a beautifully appointed bathroom at Villa Cantik, where a stunning bathtub is nestled amid lush plants. This serene oasis reflects our commitment to the healing power of nature, blending the beauty of the jungle with the elegance of indoor spaces. Immerse yourself in relaxation as you soak surrounded by vibrant greenery, bringing the soothing essence of the jungle right into your personal retreat.</p>
@@ -198,7 +204,7 @@ header:
       </div>
 
         <!-- Text Content -->
-        <div class="col-span-1 flex flex-col justify-center">
+        <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
           <div>
             <p class="small-font">Unmatched Comfort and Luxury</p>
             <p class="text-2xl title-font">Villa Amenities</p>
@@ -246,19 +252,19 @@ header:
         <div class="p-8 text-center text-light">
           
           <div class="text-center mt-8">
-            <p class="text-lg font-semibold">Book Your Stay</p>
-            <p class="text-sm text-gray-600">Choose your preferred booking option: WhatsApp, Airbnb, or Booking.com</p>
+            <p class="banner-font text-xl sm:text-3xl lg:text-4xl">Book Your Stay</p>
+            <p class="pt-5p small-font">Choose your preferred booking option: WhatsApp, Airbnb, or Booking.com</p>
           </div>
         
           <!-- Booking Buttons -->
           <div class="flex justify-center space-x-4 mt-6">
-            <a href="https://wa.me/yourwhatsapplink" target="_blank" class="px-6 py-3 bg-green-500 text-white rounded-md hover:bg-green-600">
+            <a href="https://wa.me/yourwhatsapplink" target="_blank" class="button">
               Book on WhatsApp
             </a>
-            <a href="https://www.airbnb.com/yourlisting" target="_blank" class="px-6 py-3 bg-red-500 text-white rounded-md hover:bg-red-600">
+            <a href="https://www.airbnb.com/yourlisting" target="_blank" class="button">
               Book on Airbnb
             </a>
-            <a href="https://www.booking.com/yourlisting" target="_blank" class="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+            <a href="https://www.booking.com/yourlisting" target="_blank" class="button">
               Book on Booking.com
             </a>
           </div>
@@ -268,3 +274,34 @@ header:
     </div>
   </div>
 </section>
+
+
+
+
+
+
+<!-----------Google Maps-------------->
+
+<section class="max-w-screen-2xl mx-auto">
+  <div class="grid grid-cols-3 px-5p pt-5p gap-5">
+    <div class="col-span-1 flex flex-col justify-center items-start pr-5p">
+      <p class="small-font">Plan Your Escape</p>
+      <p class="text-2xl title-font">We Look Forward to Welcoming You</p>
+    </div>
+    <div class="col-span-2 flex items-center">
+      <p>Discover the serenity of Villa Cantik nestled in the heart of the jungle. Our secluded retreat offers the perfect blend of luxury and nature, providing an unparalleled experience in your quest for tranquility. We are excited to invite you to explore the natural beauty and ultimate comfort of our jungle haven. Your journey to relaxation begins here—let us help you make unforgettable memories.</p>
+    </div>
+  </div>
+  <div class="map-container p-5p">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.269074367672!2d115.2454397839759!3d-8.496110608896684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2sUbud%2C%20Gianyar%20Regency%2C%20Bali!5e0!3m2!1sen!2sid!4v1725860806754!5m2!1sen!2sid"
+      class="w-full h-full border-0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+

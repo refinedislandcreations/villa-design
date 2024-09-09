@@ -100,3 +100,91 @@ header {
 .nav-bg {
   background-color: #f5f4efba;
 }
+
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 0.35rem 1.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #f5f4ef; /* Light text color */
+  background-color: #004d40; /* Dark green background */
+  border: 2px solid #004d40; /* Border matches the background color */
+  border-radius: 0.375rem; /* Rounded corners */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover Effect */
+.button:hover {
+  background-color: #f5f4ef; /* Light background color on hover */
+  color: #004d40; /* Dark green text color on hover */
+  border-color: #f5f4ef; /* Border matches the background color on hover */
+}
+
+
+
+/* Scrolling Text */
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.horizontal-scrolling-items {
+  display: flex;
+  font-size: 24px; /* Adjusted font size */
+  width: 100%;
+  animation: infiniteScroll 30s linear infinite;
+}
+
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+  padding-right: 100%; /* Ensure space between repeats */
+}
+
+
+
+/* Gallery Container */
+.gallery-pic {
+  flex: 1 1 30%; /* Adjusts the width of the images, and they wrap if needed */
+  height: 40vh;  /* Fixed height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery-pic:hover {
+  transform: scale(1.1); /* Slightly larger zoom effect */
+  opacity: 0.9; /* Slight fade effect */
+}
+
+
+
+/* Map */
+
+.map-container {
+  height: 60vh; /* Ensuring the map container has a set height */
+}
+
+iframe {
+  height: 100%; /* Allow the iframe to fully utilize the height of the container */
+}
