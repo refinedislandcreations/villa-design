@@ -17,7 +17,7 @@ header:
 
 <header class="relative max-w-screen-2xl mx-auto">
   <!-- Fixed Navigation Positioned Over Image on Smaller Screens -->
-  <div class="absolute top-0 left-0 right-0 flex flex-col items-center px-5p py-2p z-20 text-white sm:fixed sm:flex-row sm:justify-between sm:items-center sm:text-black nav-bg">
+  <div class="absolute top-0 left-0 right-0 flex flex-col items-center px-5p py-5p sm:py-2p z-20 text-white sm:fixed sm:flex-row sm:justify-between sm:items-center sm:text-black nav-bg">
     <h2 class="text-2xl mb-2 sm:mb-0">
       <a href="/index">Villa Cantik</a>
     </h2>
@@ -63,7 +63,7 @@ header:
 
 <!-- Banner Section -->
 <section class="max-w-screen-2xl mx-auto">
-  <div class="dark-bg text-light banner-font py-2p mt-5p flex items-center justify-center h-40">
+  <div class="dark-bg text-light banner-font sm:py-2p sm:mt-5p flex items-center justify-center h-20 sm:h-40">
     <div class="scroll-container">
       <div class="horizontal-scrolling-items">
         <div class="horizontal-scrolling-items__item">
@@ -79,22 +79,22 @@ header:
 
 <!-----------Text and images-------------->
 <section class="max-w-screen-2xl mx-auto">
-  <div class="grid grid-cols-3 p-5p gap-5">
+  <div class="md:grid md:grid-cols-3 pt-10p px-5p mb-5p sm:mb-0 sm:p-5p sm:gap-5">
     <div class="col-span-1 flex flex-col justify-center items-start pr-5p">
       <p class="small-font">Experience Villa Cantik</p>
       <p class="text-2xl title-font">Explore Our Jungle Retreat</p>
     </div>
     <div class="col-span-2 flex items-center">
-      <p>Get a glimpse of Villa Cantik through striking visuals that capture the essence of our secluded jungle haven. See how luxury and nature blend seamlessly in every corner of your escape.</p>
+      <p class="pb-5p sm:pb-0">Get a glimpse of Villa Cantik through striking visuals that capture the essence of our secluded jungle haven. See how luxury and nature blend seamlessly in every corner of your escape.</p>
     </div>
     <!-- Updated gallery section -->
     <div class="col-span-3 flex flex-wrap justify-center gap-3">
-      <div class="gallery-pic" style="background-image:url('/images/gallery-1.png');" alt="View from the garden"></div>
-      <div class="gallery-pic" style="background-image:url('/images/gallery-2.png');" alt="Cozy living area with jungle view"></div>
-      <div class="gallery-pic" style="background-image:url('/images/gallery-3.png');" alt="Spacious bedroom with natural light"></div>
-      <div class="gallery-pic" style="background-image:url('/images/gallery-4.png');" alt="Elegant bathroom with modern fixtures"></div>
-      <div class="gallery-pic" style="background-image:url('/images/gallery-5.png');" alt="Relaxing outdoor seating area"></div>
-      <div class="gallery-pic" style="background-image:url('/images/gallery-6.png');" alt="Scenic pool view surrounded by greenery"></div>
+      <div class="gallery-pic" data-aos="fade-down" style="background-image:url('/images/gallery-1.png');" alt="View from the garden"></div>
+      <div class="gallery-pic" data-aos="fade-down" style="background-image:url('/images/gallery-2.png');" alt="Cozy living area with jungle view"></div>
+      <div class="gallery-pic" data-aos="fade-down" style="background-image:url('/images/gallery-3.png');" alt="Spacious bedroom with natural light"></div>
+      <div class="gallery-pic" data-aos="fade-down" style="background-image:url('/images/gallery-4.png');" alt="Elegant bathroom with modern fixtures"></div>
+      <div class="gallery-pic" data-aos="fade-down" style="background-image:url('/images/gallery-5.png');" alt="Relaxing outdoor seating area"></div>
+      <div class="gallery-pic" data-aos="fade-down" style="background-image:url('/images/gallery-6.png');" alt="Scenic pool view surrounded by greenery"></div>
     </div>
   </div>
 </section>
@@ -131,11 +131,11 @@ header:
 <!------Amenities-------------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="p-5p">
+  <div class="pt-10p px-5p sm:pt-5p">
     <p class="title-font text-2xl sm:text-4xl pb-5">Explore the Beauty of Our Villa in Detail</p>
     <div class="sm:grid sm:grid-cols-2 gap-5 mb-5">
       <!-- Image 1 -->
-      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+      <div class="relative col-span-1 min-h-40 sm:min-h-80">
         <div class="absolute inset-0">
           <img 
             loading="lazy"
@@ -147,7 +147,7 @@ header:
         </div>
       </div>
       <!-- Text Content -->
-      <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
+      <div class="col-span-1 flex flex-col justify-center pt-5p pb-10p sm:pt-0 sm:pb-0" data-aos="fade-down">
         <p class="small-font">Grand Living Room</p>
         <p class="text-2xl title-font">Where Elegance Meets Comfort</p>
         <p>Step into the grand living room of Villa Cantik, where sophisticated design and ultimate comfort come together. With expansive space, plush furnishings, and stunning views of the lush jungle, this is the perfect setting for relaxation and entertaining. Experience the art of living well in every corner of this beautifully appointed room.</p>
@@ -155,7 +155,7 @@ header:
 
 
       <!-- Image 2 -->
-      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+      <div class="relative col-span-1 min-h-40 sm:min-h-80">
         <div class="absolute inset-0">
           <img 
             loading="lazy"
@@ -167,7 +167,7 @@ header:
         </div>
       </div>
       <!-- Text Content -->
-      <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
+      <div class="col-span-1 flex flex-col justify-center pt-5p pb-10p sm:pt-0 sm:pb-0" data-aos="fade-down">
         <p class="small-font">Jungle-Encased Windows</p>
         <p class="text-2xl title-font">Rooms Bathed in Natural Light</p>
         <p>Each room at Villa Cantik features expansive windows that frame the lush jungle beyond, bringing the outdoors in. The large, unobstructed views not only flood the spaces with natural light but also create a seamless connection to the serene jungle surroundings. Enjoy a tranquil retreat where every glance offers a glimpse of nature’s beauty.</p>
@@ -176,7 +176,7 @@ header:
 
 
       <!-- Image 3 -->
-      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+      <div class="relative col-span-1 min-h-40 sm:min-h-80">
         <div class="absolute inset-0">
           <img 
             loading="lazy"
@@ -188,7 +188,7 @@ header:
         </div>
       </div>
       <!-- Text Content -->
-      <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
+      <div class="col-span-1 flex flex-col justify-center pt-5p pb-10p sm:pt-0 sm:pb-0" data-aos="fade-down">
         <p class="small-font">Botanical Bath Bliss</p>
         <p class="text-2xl title-font">Indulge in Nature's Spa</p>
         <p>Experience the luxury of a beautifully appointed bathroom at Villa Cantik, where a stunning bathtub is nestled amid lush plants. This serene oasis reflects our commitment to the healing power of nature, blending the beauty of the jungle with the elegance of indoor spaces. Immerse yourself in relaxation as you soak surrounded by vibrant greenery, bringing the soothing essence of the jungle right into your personal retreat.</p>
@@ -199,7 +199,7 @@ header:
 
 
       <!-- Image 4 -->
-      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+      <div class="relative col-span-1 min-h-40 sm:min-h-80">
         <div class="absolute inset-0">
           <img 
             loading="lazy"
@@ -212,7 +212,7 @@ header:
       </div>
 
         <!-- Text Content -->
-        <div class="col-span-1 flex flex-col justify-center" data-aos="fade-down">
+        <div class="col-span-1 flex flex-col justify-center pt-5p pb-10p sm:pt-0 sm:pb-0" data-aos="fade-down">
           <div>
             <p class="small-font">Unmatched Comfort and Luxury</p>
             <p class="text-2xl title-font">Villa Amenities</p>
@@ -256,23 +256,23 @@ header:
 <section class="max-w-screen-2xl mx-auto my-10">
   <div class="relative">
     <div class="bg-cover bg-no-repeat" style="background-image: url('/images/banner-quote.png'); height: 24rem; background-position: {{ page.quote-position }};">
-      <div class="absolute inset-0 flex items-center justify-center p-5p">
+      <div class="absolute inset-0 sm:flex items-center justify-center p-5p">
         <div class="p-8 text-center text-light">
           
-          <div class="text-center mt-8">
+          <div class="text-center sm:mt-8">
             <p class="banner-font text-xl sm:text-3xl lg:text-4xl">Book Your Stay</p>
             <p class="pt-5p small-font">Choose your preferred booking option: WhatsApp, Airbnb, or Booking.com</p>
           </div>
         
           <!-- Booking Buttons -->
-          <div class="flex justify-center space-x-4 mt-6">
-            <a href="https://wa.me/yourwhatsapplink" target="_blank" class="button">
+          <div class="sm:flex justify-center sm:space-x-4 mt-6">
+            <a href="https://wa.me/yourwhatsapplink" target="_blank" class="button mb-5p sm:mb-0">
               Book on WhatsApp
             </a>
-            <a href="https://www.airbnb.com/yourlisting" target="_blank" class="button">
+            <a href="https://www.airbnb.com/yourlisting" target="_blank" class="button mb-5p sm:mb-0">
               Book on Airbnb
             </a>
-            <a href="https://www.booking.com/yourlisting" target="_blank" class="button">
+            <a href="https://www.booking.com/yourlisting" target="_blank" class="button mb-5p sm:mb-0">
               Book on Booking.com
             </a>
           </div>
@@ -291,7 +291,7 @@ header:
 <!-----------Google Maps-------------->
 
 <section class="max-w-screen-2xl mx-auto">
-  <div class="grid grid-cols-3 px-5p pt-5p gap-5">
+  <div class="sm:grid sm:grid-cols-3 px-5p pt-5p gap-5">
     <div class="col-span-1 flex flex-col justify-center items-start pr-5p">
       <p class="small-font">Plan Your Escape</p>
       <p class="text-2xl title-font">We Look Forward to Welcoming You</p>
@@ -339,7 +339,7 @@ header:
     </div>
   </div>
   
-  <div class="text-center py-5p">
+  <div class="text-center pt-10p sm:pt-5p pb-5p">
     <p>&copy; {{ "now" | date: "%Y" }} All rights reserved.</p>
     <a href="https://refinedislandcreations.com/" class="pt-2" target="_blank" rel="noopener noreferrer" aria-label="Link to Refined Island Creations website design and development">
       Designed and built by <span class="underline font-semibold">Refined Island Creations</span>.

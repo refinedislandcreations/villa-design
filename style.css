@@ -150,7 +150,7 @@ header {
   display: flex;
   font-size: 24px; /* Adjusted font size */
   width: 100%;
-  animation: infiniteScroll 30s linear infinite;
+  animation: infiniteScroll 15s linear infinite;
 }
 
 .horizontal-scrolling-items__item {
@@ -162,8 +162,8 @@ header {
 
 /* Gallery Container */
 .gallery-pic {
-  flex: 1 1 30%; /* Adjusts the width of the images, and they wrap if needed */
-  height: 40vh;  /* Fixed height */
+  flex: 1 1 100%; 
+  height: 30vh;  /* Fixed height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,10 +179,11 @@ header {
 
 
 
+
 /* Map */
 
 .map-container {
-  height: 60vh; /* Ensuring the map container has a set height */
+  height: 40vh; 
 }
 
 iframe {
@@ -195,4 +196,17 @@ iframe {
 }
 .fa-brands:hover, .fa-regular:hover {
   transform: scale(1.1);
+}
+
+
+/* Responsive styles for medium screens and up */
+@media (min-width: 768px) {
+  .gallery-pic {
+    flex: 1 1 30%; /* Adjusts the width of the images */
+    height: 40vh;  
+  }
+
+  .map-container {
+    height: 60vh; 
+  }
 }

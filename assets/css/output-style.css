@@ -511,17 +511,14 @@ a {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-5p {
+  margin-bottom: 5%;
+}
 .mt-4 {
   margin-top: 1rem;
 }
-.mt-5p {
-  margin-top: 5%;
-}
 .mt-6 {
   margin-top: 1.5rem;
-}
-.mt-8 {
-  margin-top: 2rem;
 }
 .flex {
   display: flex;
@@ -529,11 +526,8 @@ a {
 .grid {
   display: grid;
 }
-.h-40 {
-  height: 10rem;
-}
-.h-\[80vh\] {
-  height: 80vh;
+.h-20 {
+  height: 5rem;
 }
 .h-full {
   height: 100%;
@@ -541,8 +535,8 @@ a {
 .h-lvh {
   height: 100lvh;
 }
-.min-h-\[400px\] {
-  min-height: 400px;
+.min-h-40 {
+  min-height: 40vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -610,12 +604,6 @@ a {
 .border-t {
   border-top-width: 1px;
 }
-.bg-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
-  background-color: rgba(0,0,0,0.5);
-}
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
-}
 .bg-cover {
   background-size: cover;
 }
@@ -642,10 +630,6 @@ a {
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
-}
-.py-2p {
-  padding-top: 2%;
-  padding-bottom: 2%;
 }
 .py-5p {
   padding-top: 5%;
@@ -851,7 +835,7 @@ header {
   display: flex;
   font-size: 24px; /* Adjusted font size */
   width: 100%;
-  animation: infiniteScroll 30s linear infinite;
+  animation: infiniteScroll 15s linear infinite;
 }
 
 .horizontal-scrolling-items__item {
@@ -863,8 +847,8 @@ header {
 
 /* Gallery Container */
 .gallery-pic {
-  flex: 1 1 30%; /* Adjusts the width of the images, and they wrap if needed */
-  height: 40vh;  /* Fixed height */
+  flex: 1 1 100%; 
+  height: 30vh;  /* Fixed height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -880,10 +864,11 @@ header {
 
 
 
+
 /* Map */
 
 .map-container {
-  height: 60vh; /* Ensuring the map container has a set height */
+  height: 40vh; 
 }
 
 iframe {
@@ -896,6 +881,19 @@ iframe {
 }
 .fa-brands:hover, .fa-regular:hover {
   transform: scale(1.1);
+}
+
+
+/* Responsive styles for medium screens and up */
+@media (min-width: 768px) {
+  .gallery-pic {
+    flex: 1 1 30%; /* Adjusts the width of the images */
+    height: 40vh;  
+  }
+
+  .map-container {
+    height: 60vh; 
+  }
 }
 @media (min-width: 640px) {
   .sm\:static {
@@ -916,17 +914,35 @@ iframe {
   .sm\:ml-4 {
     margin-left: 1rem;
   }
+  .sm\:mt-5p {
+    margin-top: 5%;
+  }
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
   .sm\:block {
     display: block;
   }
+  .sm\:flex {
+    display: flex;
+  }
   .sm\:grid {
     display: grid;
+  }
+  .sm\:h-40 {
+    height: 10rem;
+  }
+  .sm\:min-h-80 {
+    min-height: 80vh;
   }
   .sm\:min-h-screen {
     min-height: 100vh;
   }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .sm\:flex-row {
     flex-direction: row;
@@ -943,13 +959,18 @@ iframe {
   .sm\:justify-between {
     justify-content: space-between;
   }
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
   .sm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
-  .sm\:rounded-none {
-    border-radius: 0px;
+  .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
   .sm\:bg-opacity-0 {
     --tw-bg-opacity: 0;
@@ -961,6 +982,9 @@ iframe {
   .sm\:p-5 {
     padding: 1.25rem;
   }
+  .sm\:p-5p {
+    padding: 5%;
+  }
   .sm\:px-10p {
     padding-left: 10%;
     padding-right: 10%;
@@ -969,8 +993,18 @@ iframe {
     padding-left: 5%;
     padding-right: 5%;
   }
+  .sm\:py-2p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .sm\:pb-0 {
+    padding-bottom: 0px;
+  }
   .sm\:pb-5p {
     padding-bottom: 5%;
+  }
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
   .sm\:pt-5p {
     padding-top: 5%;
@@ -982,6 +1016,14 @@ iframe {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 1;
+  }
+}
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media (min-width: 1024px) {
