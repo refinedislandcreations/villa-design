@@ -181,44 +181,52 @@ header:
       </div>
 
 
-      <!-- Image 4 -->
-<div class="relative col-span-1 h-[80vh] min-h-[400px]">
-  <div class="absolute inset-0">
-    <img 
-      loading="lazy"
-      class="w-full h-full object-cover"
-      src="/images/details-4.png"
-      style="object-position: {{ page.reconciliation-position }};"
-      alt="{{ page.reconciliation-alt }}" 
-    />
-  </div>
-</div>
 
-<!-- Text Content -->
-<div class="col-span-1 flex flex-col justify-center">
-  <div class="grid grid-cols-1 gap-4">
-    <div class="flex items-center space-x-2">
-      <i class="fa-solid fa-person text-xl"></i>
-      <p class="text-lg">Accommodates: Up to 8 guests</p>
-    </div>
-    <div class="flex items-center space-x-2">
-      <i class="fa-solid fa-bed text-xl"></i>
-      <p class="text-lg">Bedrooms: 4 spacious bedrooms</p>
-    </div>
-    <div class="flex items-center space-x-2">
-      <i class="fa-solid fa-bath text-xl"></i>
-      <p class="text-lg">Bathrooms: 6 elegantly designed bathrooms</p>
-    </div>
-    <div class="flex items-center space-x-2">
-      <i class="fa-solid fa-utensils text-xl"></i>
-      <p class="text-lg">Kitchen: Fully equipped modern kitchen</p>
-    </div>
-    <div class="flex items-center space-x-2">
-      <i class="fa-solid fa-person-swimming text-xl"></i>
-      <p class="text-lg">Pool: Private swimming pool with jungle views</p>
-    </div>
-  </div>
-</div>
+
+
+      <!-- Image 4 -->
+      <div class="relative col-span-1 h-[80vh] min-h-[400px]">
+        <div class="absolute inset-0">
+          <img 
+            loading="lazy"
+            class="w-full h-full object-cover"
+            src="/images/details-4.png"
+            style="object-position: {{ page.reconciliation-position }};"
+            alt="{{ page.reconciliation-alt }}" 
+          />
+        </div>
+      </div>
+
+        <!-- Text Content -->
+        <div class="col-span-1 flex flex-col justify-center">
+          <div>
+            <p class="small-font">Unmatched Comfort and Luxury</p>
+            <p class="text-2xl title-font">Villa Amenities</p>
+            <p class="pb-5p">Villa Cantik offers an array of thoughtfully curated amenities designed to enhance your stay. From spacious bedrooms to a private pool, experience the perfect blend of comfort and style in every corner of our jungle retreat.</p>
+          </div>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-person text-xl"></i>
+              <p>Accommodates: Up to 8 guests</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-bed text-xl"></i>
+              <p>Bedrooms: 4 spacious bedrooms</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-bath text-xl"></i>
+              <p>Bathrooms: 6 elegantly designed bathrooms</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-utensils text-xl"></i>
+              <p>Kitchen: Fully equipped modern kitchen</p>
+            </div>
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-person-swimming text-xl"></i>
+              <p>Pool: Private swimming pool with jungle views</p>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -227,3 +235,36 @@ header:
 </section>
 
 
+
+
+
+<!-- Booking Options -->
+<section class="max-w-screen-2xl mx-auto my-10">
+  <div class="relative">
+    <div class="bg-cover bg-no-repeat" style="background-image: url('/images/banner-quote.png'); height: 24rem; background-position: {{ page.quote-position }};">
+      <div class="absolute inset-0 flex items-center justify-center p-5p">
+        <div class="p-8 text-center text-light">
+          
+          <div class="text-center mt-8">
+            <p class="text-lg font-semibold">Book Your Stay</p>
+            <p class="text-sm text-gray-600">Choose your preferred booking option: WhatsApp, Airbnb, or Booking.com</p>
+          </div>
+        
+          <!-- Booking Buttons -->
+          <div class="flex justify-center space-x-4 mt-6">
+            <a href="https://wa.me/yourwhatsapplink" target="_blank" class="px-6 py-3 bg-green-500 text-white rounded-md hover:bg-green-600">
+              Book on WhatsApp
+            </a>
+            <a href="https://www.airbnb.com/yourlisting" target="_blank" class="px-6 py-3 bg-red-500 text-white rounded-md hover:bg-red-600">
+              Book on Airbnb
+            </a>
+            <a href="https://www.booking.com/yourlisting" target="_blank" class="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+              Book on Booking.com
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
