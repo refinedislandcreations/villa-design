@@ -577,6 +577,9 @@ a {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .gap-10 {
   gap: 2.5rem;
 }
@@ -651,9 +654,6 @@ a {
 }
 .pb-2p {
   padding-bottom: 2%;
-}
-.pb-5 {
-  padding-bottom: 1.25rem;
 }
 .pb-5p {
   padding-bottom: 5%;
@@ -931,6 +931,10 @@ iframe {
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
   }
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -954,6 +958,9 @@ iframe {
   }
   .sm\:min-h-screen {
     min-height: 100vh;
+  }
+  .sm\:max-w-screen-2xl {
+    max-width: 1536px;
   }
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1047,16 +1054,29 @@ iframe {
     padding-top: 5%;
     padding-bottom: 5%;
   }
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
 }
 @media (min-width: 1024px) {
   .lg\:pt-0 {
     padding-top: 0px;
   }
-  .lg\:pb-10p {
-    padding-bottom: 10%;
-  }
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:px-5p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .xl\:py-2p {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  .xl\:pt-2p {
+    padding-top: 2%;
   }
 }
