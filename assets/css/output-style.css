@@ -493,6 +493,9 @@ a {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -513,6 +516,9 @@ a {
 }
 .mb-5p {
   margin-bottom: 5%;
+}
+.mr-5p {
+  margin-right: 5%;
 }
 .mt-4 {
   margin-top: 1rem;
@@ -553,8 +559,8 @@ a {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -571,6 +577,12 @@ a {
 .justify-center {
   justify-content: center;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -579,11 +591,6 @@ a {
 }
 .gap-5 {
   gap: 1.25rem;
-}
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -627,6 +634,10 @@ a {
   padding-left: 10%;
   padding-right: 10%;
 }
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
 .px-5p {
   padding-left: 5%;
   padding-right: 5%;
@@ -637,6 +648,9 @@ a {
 }
 .pb-10p {
   padding-bottom: 10%;
+}
+.pb-2p {
+  padding-bottom: 2%;
 }
 .pb-5 {
   padding-bottom: 1.25rem;
@@ -669,6 +683,10 @@ a {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 1;
+}
+.text-sm {
+  font-size: 0.875rem;;
+  line-height: 1.2;
 }
 .text-xl {
   font-size: 1.25rem;
@@ -751,7 +769,6 @@ header {
   font-style: normal;
   font-size: 0.75rem; /* 12px */
   line-height: 1rem; /* 16px */
-  padding-bottom: 2%;
 }
 
 .title-font {
@@ -761,7 +778,6 @@ header {
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  padding-bottom: 5%;
 }
 
 .banner-font {
@@ -883,6 +899,13 @@ iframe {
   transform: scale(1.1);
 }
 
+/* Responsive styles for medium screens and up */
+@media (min-width: 640px) {
+  .gallery-pic {
+    height: 40vh;  
+  }
+}
+
 
 /* Responsive styles for medium screens and up */
 @media (min-width: 768px) {
@@ -892,7 +915,7 @@ iframe {
   }
 
   .map-container {
-    height: 60vh; 
+    height: 50vh; 
   }
 }
 @media (min-width: 640px) {
@@ -911,12 +934,6 @@ iframe {
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
-  .sm\:ml-4 {
-    margin-left: 1rem;
-  }
-  .sm\:mt-5p {
-    margin-top: 5%;
-  }
   .sm\:mt-8 {
     margin-top: 2rem;
   }
@@ -932,8 +949,8 @@ iframe {
   .sm\:h-40 {
     height: 10rem;
   }
-  .sm\:min-h-80 {
-    min-height: 80vh;
+  .sm\:min-h-60 {
+    min-height: 60vh;
   }
   .sm\:min-h-screen {
     min-height: 100vh;
@@ -961,11 +978,6 @@ iframe {
   }
   .sm\:gap-5 {
     gap: 1.25rem;
-  }
-  .sm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0px * var(--tw-space-x-reverse));
-    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
   .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
@@ -1000,8 +1012,14 @@ iframe {
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
+  .sm\:pb-2p {
+    padding-bottom: 2%;
+  }
   .sm\:pb-5p {
     padding-bottom: 5%;
+  }
+  .sm\:pr-5p {
+    padding-right: 5%;
   }
   .sm\:pt-0 {
     padding-top: 0px;
@@ -1025,10 +1043,17 @@ iframe {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .md\:py-5p {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 @media (min-width: 1024px) {
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+  .lg\:pb-10p {
+    padding-bottom: 10%;
   }
   .lg\:text-4xl {
     font-size: 2.25rem;
